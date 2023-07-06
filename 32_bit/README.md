@@ -3,6 +3,7 @@ A 32-bit CPU design in Verilog.
 The CPU has 15x32-bit GPRs - r0:r14, one 32-bit Input port, one 32-bit Output port and a program counter.
 
 Instruction bits:
+
     Byte 3:
         31    - Indicates that Src1 is an immediate value
         30    - Indicates that Src2 is an immediate value
@@ -10,7 +11,6 @@ Instruction bits:
         28    - Reserved for future use
         27    - 0:ALU operation, 1:Conditional branch
         26:24 - ALU or conditional operation
-
     Byte 2:
         23:16 - Src1
     Byte 1:
